@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
 
 const Home = () => (
-  <section>
+  <section className="fade-in">
     <h2>What We Do</h2>
     <p>Welcome to <strong>BetKing</strong>—the ultimate cricket prediction game! Pick your IPL team, join a pool (2-10 players), and stake ₹200 to ₹9,999. If your team wins, you split the pot with fellow kings—or take it all if you’re the lone ruler. We keep 25% as a service fee, you get full winnings via IMPS. No gambling here—just skill, strategy, and royal rewards!</p>
     <p>App coming soon to <a href="https://betking.net.in">betking.net.in</a>—stay tuned!</p>
@@ -11,7 +11,7 @@ const Home = () => (
 );
 
 const Terms = () => (
-  <section>
+  <section className="fade-in">
     <h2>Terms and Conditions</h2>
     <ul>
       <li><strong>Skill-Based Game</strong>: BetKing is a prediction game based on cricket knowledge, not gambling.</li>
@@ -25,7 +25,7 @@ const Terms = () => (
 );
 
 const Refund = () => (
-  <section>
+  <section className="fade-in">
     <h2>Refund and Cancellation</h2>
     <p><strong>No Refunds</strong>: Once you place a prediction, stakes are final—no refunds or cancellations. If a match is abandoned or cancelled, pools are voided, and stakes returned minus the 25% service fee (if processed).</p>
     <p><strong>Fair Play</strong>: We ensure all predictions are locked before match start—no mid-game changes allowed.</p>
@@ -33,7 +33,7 @@ const Refund = () => (
 );
 
 const Contact = () => (
-  <section>
+  <section className="fade-in">
     <h2>Contact Us</h2>
     <p>Got questions? Reach out to the BetKing crew!</p>
     <p>Email: <a href="mailto:support@betking.net.in">support@betking.net.in</a></p>
@@ -45,14 +45,14 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <header>
+        <header className="header-bounce">
           <h1>BetKing</h1>
           <p>Bet big, reign supreme!</p>
           <nav>
-            <Link to="/">Home</Link>
-            <Link to="/terms">Terms</Link>
-            <Link to="/refund">Refund</Link>
-            <Link to="/contact">Contact</Link>
+            <Link to="/" className="nav-link">Home</Link>
+            <Link to="/terms" className="nav-link">Terms</Link>
+            <Link to="/refund" className="nav-link">Refund</Link>
+            <Link to="/contact" className="nav-link">Contact</Link>
           </nav>
         </header>
         <Routes>
