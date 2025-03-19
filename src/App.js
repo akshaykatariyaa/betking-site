@@ -5,8 +5,8 @@ import './App.css';
 const Home = () => (
   <section className="fade-in">
     <h2>What We Do</h2>
-    <p>Welcome to <strong>BetKing</strong>—the ultimate cricket prediction game! Pick your IPL team, join a pool (2-10 players), and stake ₹200 to ₹9,999. If your team wins, you split the pot with fellow kings—or take it all if you’re the lone ruler. We keep 25% as a service fee, you get full winnings via IMPS. No gambling here—just skill, strategy, and royal rewards!</p>
-    <p>App coming soon to <a href="https://betking.net.in">betking.net.in</a>—stay tuned!</p>
+    <p>Welcome to <strong>PredictKing</strong>—the ultimate cricket prediction game! Pick your IPL team, join a pool (2-10 players), and stake ₹200 to ₹9,999. If your team wins, you split the pot with fellow kings—or take it all if you’re the lone ruler. We keep 25% as a service fee, you get full winnings via IMPS. No gambling here—just skill, strategy, and royal rewards!</p>
+    <p>App coming soon to <a href="https://predictking.in">predictking.in</a>—stay tuned!</p>
   </section>
 );
 
@@ -14,7 +14,7 @@ const Terms = () => (
   <section className="fade-in">
     <h2>Terms and Conditions</h2>
     <ul>
-      <li><strong>Skill-Based Game</strong>: BetKing is a prediction game based on cricket knowledge, not gambling.</li>
+      <li><strong>Skill-Based Game</strong>: PredictKing is a prediction game based on cricket knowledge, not gambling.</li>
       <li><strong>Participation</strong>: Open to Indian residents 18+. Pools range from 2-10 players.</li>
       <li><strong>Service Fee</strong>: We retain 25% of each pool as a fee for running the show.</li>
       <li><strong>Payouts</strong>: Full winnings paid via IMPS/NEFT to your bank account. You’re responsible for reporting and paying taxes per Indian law.</li>
@@ -35,8 +35,8 @@ const Refund = () => (
 const Contact = () => (
   <section className="fade-in">
     <h2>Contact Us</h2>
-    <p>Got questions? Reach out to the BetKing crew!</p>
-    <p>Email: <a href="mailto:support@betking.net.in">support@betking.net.in</a></p>
+    <p>Got questions? Reach out to the PredictKing crew!</p>
+    <p>Email: <a href="mailto:akshaykatariya24@gmail.com">akshaykatariya24@gmail.com</a></p>
     <p>We’ll get back to you faster than a Bumrah yorker!</p>
   </section>
 );
@@ -46,8 +46,8 @@ function App() {
     <Router>
       <div className="App">
         <header className="header-bounce">
-          <h1>BetKing</h1>
-          <p>Bet big, reign supreme!</p>
+          <h1>PredictKing</h1>
+          <p>Predict Smart, reign supreme!</p>
           <nav>
             <Link to="/" className="nav-link">Home</Link>
             <Link to="/terms" className="nav-link">Terms</Link>
@@ -62,7 +62,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <footer>
-          <p>© 2025 BetKing. All rights reserved.</p>
+          <p>© 2025 PredictKing. All rights reserved.</p>
         </footer>
       </div>
     </Router>
